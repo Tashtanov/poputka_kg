@@ -9,13 +9,13 @@ class TitleWithSubtitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(child: Column(
-      // crossAxisAlignment: CrossAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
 
       children: [
-        Text(title,style:const TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: kColorButton),),
+        Text(title,style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Theme.of(context).primaryColorLight),),
         const SizedBox(height: 15),
-          Text(subtitle,style:const TextStyle(fontSize: 20,color: kColorSubtitle),),
+          Text(subtitle,style: TextStyle(fontSize: 17,color: Theme.of(context).primaryColorLight),),
       ],
     ),);
   }
