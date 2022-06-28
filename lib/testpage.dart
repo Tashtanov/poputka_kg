@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:project_poputchik_kg/src/core/constants.dart';
+import 'package:project_poputchik_kg/src/presentation/blocs/switch_bloc/switch_bloc.dart';
 import 'package:project_poputchik_kg/src/presentation/theme/theme_provider.dart';
 
 import 'src/presentation/pages/settingpage.dart';
@@ -80,7 +82,8 @@ class _TestPageState extends State<TestPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: const [
-                ChangeThemeButtonWidget(),
+               ChangeThemeButtonWidget()
+
               ],
             ),
             Text(
